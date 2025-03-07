@@ -613,13 +613,13 @@ a[href*='tel'], a[href*='mailto'] {
 
 @media (min-width: 992px) {
 	.box-round-wrap {
-		left: 20vw;
+		left: 12vw;
 		top: -38px;
 	}
 }
 
 .box-round-wrap img {
-	box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 }
 
