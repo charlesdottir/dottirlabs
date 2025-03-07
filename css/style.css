@@ -611,7 +611,7 @@ a[href*='tel'], a[href*='mailto'] {
 	max-width: 40vw;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 692px) {
 	.box-round-wrap {
 		left: 12vw;
 		top: -38px;
