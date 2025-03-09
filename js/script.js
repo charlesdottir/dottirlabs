@@ -451,7 +451,7 @@
 			swiper.decor.el = document.createElement( 'div' );
 			swiper.decor.el.classList.add( 'swiper-decorative' );
 			swiper.decor.circle = calcCircle( swiper );
-			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2-300)+'px;height:'+(swiper.decor.circle.radius*2-300)+'px"></div>';
+			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+100'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2-300)+'px;height:'+(swiper.decor.circle.radius*2-300)+'px"></div>';
 			swiper.$el[0].insertBefore( swiper.decor.el, swiper.$wrapperEl[0] );
 			swiper.decor.circleEl = swiper.decor.el.querySelector('.swiper-decorative-circle');
 
