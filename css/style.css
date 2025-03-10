@@ -3771,7 +3771,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-aside-open-toggle::before {
-	content: '\e910';
+	content: '\e996';
 	transform: translate(-50%, -50%);
 }
 
