@@ -486,10 +486,10 @@
 							duration: swiper.params.speed/4,
 							delay: swiper.params.speed/2,
 							easing: swiper.params.decor.easingOut,
-							left: swiper.decor.circle.centerX,
+							left: swiper.decor.circle.centerX + 100,
 							top: swiper.decor.circle.centerY,
-							width: swiper.decor.circle.radius * 2,
-							height: swiper.decor.circle.radius * 2,
+							width: swiper.decor.circle.radius * 2 - 300,
+							height: swiper.decor.circle.radius * 2 - 300,
 							complete: resolve
 						});
 					});
