@@ -651,7 +651,7 @@ a[href*='tel'], a[href*='mailto'] {
 
 .box-custom-2-smal {
 	position: absolute;
-	top: 27%;
+	top: 35%;
 	right: 0;
 	color: #000000;
 	text-align: left;
@@ -659,6 +659,7 @@ a[href*='tel'], a[href*='mailto'] {
 	line-height: 1;
 	padding: 9px 28px 7px 17px;
 	background-color: #F9F9F9;
+	border-radius: 10px;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -694,6 +695,7 @@ a[href*='tel'], a[href*='mailto'] {
 	left: 15px;
 	border-width: 16px 22px 0 0;
 	border-color: #D6D6D6 transparent transparent transparent;
+	display: none; /*remove this line to add quote triangle*/
 }
 
 .box-custom-2-smal::after {
