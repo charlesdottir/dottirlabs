@@ -106,8 +106,8 @@ html p a:hover {
 * Typography
 */
 body {
-	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 16px;
+	font-family: Calibri, "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 20px;
 	line-height: 1.6875;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.7);
@@ -135,21 +135,21 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, [class^=
 h1,
 .heading-1 {
 	position: relative;
-	font-size: 36px;
+	font-size: 45px;
 	font-weight: 900;
 }
 
 @media (min-width: 992px) {
 	h1,
 	.heading-1 {
-		font-size: 55px;
+		font-size: 68px;
 	}
 }
 
 @media (min-width: 1200px) {
 	h1,
 	.heading-1 {
-		font-size: 70px;
+		font-size: 87px;
 		line-height: 1.21429;
 	}
 }
@@ -162,7 +162,7 @@ h1[data-subtext]::before,
 	top: -30px;
 	left: -10px;
 	color: #000000;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
 	background-color: #9FCF8C;
 	width: 46px;
@@ -195,21 +195,21 @@ h1[data-subtext]::before,
 
 h2,
 .heading-2 {
-	font-size: 28px;
+	font-size: 35px;
 	font-weight: 700;
 }
 
 @media (min-width: 992px) {
 	h2,
 	.heading-2 {
-		font-size: 40px;
+		font-size: 50px;
 		line-height: 1.225;
 	}
 }
 
 h3,
 .heading-3 {
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.45;
 	color: rgba(0, 0, 0, 0.5);
 	font-weight: 600;
@@ -221,42 +221,42 @@ h3,
 
 h4,
 .heading-4 {
-	font-size: 22px;
+	font-size: 27px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h4,
 	.heading-4 {
-		font-size: 24px;
+		font-size: 30px;
 		line-height: 1.25;
 	}
 }
 
 h5,
 .heading-5 {
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h5,
 	.heading-5 {
-		font-size: 18px;
+		font-size: 22px;
 		line-height: 1.44444;
 	}
 }
 
 h6,
 .heading-6 {
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h6,
 	.heading-6 {
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 1.5;
 	}
 }
@@ -268,7 +268,7 @@ h3.subtitle {
 small,
 .small {
 	display: block;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.5;
 }
 
@@ -280,13 +280,13 @@ mark,
 }
 
 .big {
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 1.72222;
 	font-weight: 500;
 }
 
 .lead {
-	font-size: 24px;
+	font-size: 30px;
 	line-height: 34px;
 	font-weight: 300;
 }
@@ -310,7 +310,7 @@ p [style*='max-width'] {
 }
 
 .postitle {
-	font-weight: 500;
+	font-weight: 625;
 	line-height: 21px;
 	color: rgba(0, 0, 0, 0.7);
 }
@@ -381,7 +381,7 @@ a[href*='tel'], a[href*='mailto'] {
 
 .link-border {
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
@@ -403,7 +403,7 @@ a[href*='tel'], a[href*='mailto'] {
 	width: 36px;
 	height: 36px;
 	line-height: 36px;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .link-social [class*=facebook] {
@@ -471,7 +471,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-minimal .box-minimal-icon {
-	font-size: 50px;
+	font-size: 62px;
 	line-height: 50px;
 	color: #6FBEB8;
 }
@@ -519,14 +519,14 @@ a[href*='tel'], a[href*='mailto'] {
 
 .box-counter-title {
 	display: inline-block;
-	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: Calibri, "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.3;
 	letter-spacing: -.025em;
 }
 
 .box-counter-main {
-	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: Calibri, "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 45px;
 	font-weight: 400;
 	line-height: 1.2;
@@ -538,7 +538,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-counter-main .small {
-	font-size: 28px;
+	font-size: 35px;
 }
 
 .box-counter-main .small_top {
@@ -574,25 +574,25 @@ a[href*='tel'], a[href*='mailto'] {
 
 @media (min-width: 768px) {
 	.box-counter-title {
-		font-size: 18px;
+		font-size: 22px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.box-counter-main {
-		font-size: 60px;
+		font-size: 75px;
 	}
 	.box-counter-main .small {
-		font-size: 36px;
+		font-size: 45px;
 	}
 	* + .box-counter-main {
-		margin-top: 30px;
+		margin-top: 37px;
 	}
 	* + .box-counter-divider {
-		margin-top: 15px;
+		margin-top: 18px;
 	}
 	* + .box-counter-title {
-		margin-top: 18px;
+		margin-top: 22px;
 	}
 }
 
@@ -704,7 +704,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-custom-2-name {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 }
 
@@ -1028,7 +1028,7 @@ html .list-inline-md > * {
 .list-marked > li {
 	position: relative;
 	padding-left: 33px;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 31px;
 	font-weight: 500;
 	color: #000000;
@@ -1036,7 +1036,7 @@ html .list-inline-md > * {
 
 @media (min-width: 768px) {
 	.list-marked > li {
-		font-size: 18px;
+		font-size: 22px;
 	}
 }
 
@@ -1119,7 +1119,7 @@ img {
 */
 .icon {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1;
 }
 
@@ -1137,7 +1137,7 @@ img {
 }
 
 .icon-lg {
-	font-size: 50px;
+	font-size: 62px;
 }
 
 /*
@@ -1159,7 +1159,7 @@ img {
 
 .table-custom th {
 	padding: 35px 24px;
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: 700;
 	letter-spacing: .05em;
 	text-transform: uppercase;
@@ -1287,7 +1287,7 @@ hr {
 	overflow: hidden;
 	display: inline-block;
 	padding: 22px 60px;
-	font-size: 14px;
+	font-size: 21px;
 	line-height: 1.25;
 	border: 0;
 	font-weight: 700;
@@ -1482,19 +1482,19 @@ hr {
 
 .button-sm {
 	padding: 22px 30px;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 1.25;
 }
 
 .button-lg {
 	padding: 12px 50px;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 1.5;
 }
 
 .button-xl {
 	padding: 16px 50px;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 28px;
 }
 
@@ -1561,7 +1561,7 @@ hr {
 
 .btn-primary {
 	border-radius: 3px;
-	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: Calibri, "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 700;
 	letter-spacing: .05em;
 	text-transform: uppercase;
@@ -1625,7 +1625,7 @@ input:-webkit-autofill ~ .form-validation {
 	width: 100%;
 	min-height: 55px;
 	padding: 14px 19px;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
 	letter-spacing: -.02em;
@@ -1664,7 +1664,7 @@ textarea.form-input {
 	right: 0;
 	padding-left: 19px;
 	padding-right: 19px;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
 	pointer-events: none;
@@ -1707,7 +1707,7 @@ textarea.form-input {
 	top: 0;
 	z-index: 11;
 	margin-top: 2px;
-	font-size: 9px;
+	font-size: 11px;
 	font-weight: 400;
 	line-height: 12px;
 	letter-spacing: 0;
@@ -1746,7 +1746,7 @@ textarea.form-input {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 1.2;
 	margin-top: 2px;
@@ -1991,12 +1991,12 @@ textarea.form-input {
 .form-lg .form-input,
 .form-lg .form-label,
 .form-lg .select2-container .select2-choice {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .form-lg .form-input,
 .form-lg .select2-container .select2-choice {
-	font-size: 16px;
+	font-size: 20px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
@@ -2090,7 +2090,7 @@ textarea.form-input {
 	top: -15px;
 	left: -11px;
 	color: #9D9898;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
 	background-color: #ffffff;
 	width: 58px;
@@ -2233,7 +2233,7 @@ textarea.form-input {
 @media (max-width: 767.98px) {
 	.quote-classic-name {
 		margin-top: 20px;
-		font-size: 20px;
+		font-size: 25px;
 	}
 }
 
@@ -2257,7 +2257,7 @@ textarea.form-input {
 	background-color: #151515;
 	border-radius: 0;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-	font-size: 14px;
+	font-size: 17px;
 }
 
 .snackbars .icon-xxs {
@@ -2287,7 +2287,7 @@ textarea.form-input {
 	.snackbars {
 		max-width: 540px;
 		padding: 12px 15px;
-		font-size: 15px;
+		font-size: 18px;
 	}
 }
 
@@ -2302,7 +2302,7 @@ textarea.form-input {
 
 .footer-classic-title {
 	margin-top: 7px;
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
@@ -2398,14 +2398,14 @@ h3.product-title {
 }
 
 .product-price-currency {
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 500;
 	padding-top: 6px;
 	padding-right: 2px;
 }
 
 .product-price-value {
-	font-size: 80px;
+	font-size: 100px;
 	font-weight: 300;
 	line-height: 1;
 }
@@ -3151,7 +3151,7 @@ html [class*='section-'].section-bottom-0 {
 	position: relative;
 	display: inline-block;
 	min-width: 170px;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 
@@ -3179,7 +3179,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 p.rights {
-	font-size: 14px;
+	font-size: 17px;
 	color: rgba(0, 0, 0, 0.5);
 	margin-top: 47px;
 }
@@ -3490,7 +3490,7 @@ html:not(.lt-ie10) .not-animated {
 	z-index: 100;
 	width: 55px;
 	height: 55px;
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 51px;
 	color: #ffffff;
 	background: #6FBEB8;
@@ -3763,7 +3763,7 @@ html.tablet .ui-to-top {
 	background-color: #F9F9F9;
 	display: block;
 	color: #000000;
-	font-size: 30px;
+	font-size: 37px;
 	text-align: center;
 	border: none;
 	cursor: pointer;
@@ -3833,7 +3833,7 @@ html.tablet .ui-to-top {
 .rd-navbar-aside h3 {
 	color: #000000;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -3913,7 +3913,7 @@ html.tablet .ui-to-top {
 	justify-content: center;
 	position: relative;
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
 	transition: .25s;
@@ -4261,7 +4261,7 @@ html.tablet .ui-to-top {
 	overflow-y: auto;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 34px;
 	transform: translateX(-110%);
 }
@@ -4360,7 +4360,7 @@ html.tablet .ui-to-top {
 .rd-navbar-fixed .rd-navbar-dropdown > li > a {
 	display: block;
 	padding: 9px 56px 9px 16px;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.5;
 }
 
@@ -4377,7 +4377,7 @@ html.tablet .ui-to-top {
 	position: relative;
 	display: block;
 	padding: 0 18px 7px;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 
@@ -4900,7 +4900,7 @@ html.rd-navbar-fixed-linked header {
 	top: 50%;
 	transform: translateY(-50%);
 	display: none;
-	font-size: 26px;
+	font-size: 32px;
 	line-height: 1;
 	color: #ffffff;
 	text-align: center;
@@ -4972,7 +4972,7 @@ html.rd-navbar-fixed-linked header {
 
 .swiper-pagination .swiper-pagination-bullet {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
 	color: rgba(255, 255, 255, 0.7);
 	padding-right: 31px;
@@ -4996,7 +4996,7 @@ html.rd-navbar-fixed-linked header {
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	border-bottom: 2px solid #ffffff;
-	font-size: 30px;
+	font-size: 37px;
 	font-weight: 500;
 	color: #ffffff;
 }
@@ -5081,7 +5081,7 @@ html.rd-navbar-fixed-linked header {
 	transform: translate(0, -50%);
 	color: rgba(255, 255, 255, 0.06);
 	font-weight: 900;
-	font-size: 280px;
+	font-size: 350px;
 	text-transform: uppercase;
 }
 
@@ -5249,7 +5249,7 @@ html.rd-navbar-fixed-linked header {
 	width: 40px;
 	height: 40px;
 	border-radius: 3px;
-	font-size: 40px;
+	font-size: 50px;
 	line-height: 1;
 	cursor: pointer;
 	pointer-events: auto;
@@ -5609,7 +5609,7 @@ html.rd-navbar-fixed-linked header {
 	display: block;
 	padding: 0;
 	border: none;
-	font-size: 15px;
+	font-size: 18px;
 	min-height: 25px;
 	box-sizing: border-box;
 }
@@ -5728,7 +5728,7 @@ html.rd-navbar-fixed-linked header {
 	padding-top: 17.5px;
 	padding-bottom: 17.5px;
 	padding-left: 19px;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1;
 	color: #000000;
 	padding-right: 20px;
@@ -5813,7 +5813,7 @@ html.rd-navbar-fixed-linked header {
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
 	padding: 5px;
 	cursor: default;
-	font-size: 15px;
+	font-size: 18px;
 	background-color: #6FBEB8;
 	color: #ffffff;
 }
