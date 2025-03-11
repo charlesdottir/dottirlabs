@@ -688,6 +688,7 @@ a[href*='tel'], a[href*='mailto'] {
 	width: 0;
 	height: 0;
 	border-style: solid;
+	display: none; /*remove this line to add quote triangle*/
 }
 
 .box-custom-2-smal::before {
@@ -695,7 +696,6 @@ a[href*='tel'], a[href*='mailto'] {
 	left: 15px;
 	border-width: 16px 22px 0 0;
 	border-color: #D6D6D6 transparent transparent transparent;
-	display: none; /*remove this line to add quote triangle*/
 }
 
 .box-custom-2-smal::after {
