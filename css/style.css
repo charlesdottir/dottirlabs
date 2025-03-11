@@ -4691,7 +4691,7 @@ html.rd-navbar-fixed-linked header {
 }
 
 .rd-navbar-classic.rd-navbar-static {
-	border-bottom: 1px solid transparent;
+	/*border-bottom: 1px solid transparent;*/ /* Uncomment this to add bottom border to navbar */
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside-outer,
