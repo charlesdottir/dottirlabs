@@ -1676,7 +1676,7 @@ textarea.form-input {
 }
 
 .form-label.focus {
-	opacity: 0;
+	opacity: 1;
 }
 
 .form-label.auto-fill {
