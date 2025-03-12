@@ -135,21 +135,21 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, [class^=
 h1,
 .heading-1 {
 	position: relative;
-	font-size: 45px;
+	font-size: 36px;
 	font-weight: 900;
 }
 
 @media (min-width: 992px) {
 	h1,
 	.heading-1 {
-		font-size: 68px;
+		font-size: 54px;
 	}
 }
 
 @media (min-width: 1200px) {
 	h1,
 	.heading-1 {
-		font-size: 87px;
+		font-size: 70px;
 		line-height: 1.21429;
 	}
 }
@@ -162,7 +162,7 @@ h1[data-subtext]::before,
 	top: -30px;
 	left: -10px;
 	color: #000000;
-	font-size: 25px;
+	font-size: 20;
 	font-weight: 600;
 	background-color: #9FCF8C;
 	width: 46px;
@@ -195,21 +195,21 @@ h1[data-subtext]::before,
 
 h2,
 .heading-2 {
-	font-size: 35px;
+	font-size: 28px;
 	font-weight: 700;
 }
 
 @media (min-width: 992px) {
 	h2,
 	.heading-2 {
-		font-size: 50px;
+		font-size: 40px;
 		line-height: 1.225;
 	}
 }
 
 h3,
 .heading-3 {
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1.45;
 	color: rgba(0, 0, 0, 0.5);
 	font-weight: 600;
@@ -221,42 +221,42 @@ h3,
 
 h4,
 .heading-4 {
-	font-size: 27px;
+	font-size: 22px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h4,
 	.heading-4 {
-		font-size: 30px;
+		font-size: 24px;
 		line-height: 1.25;
 	}
 }
 
 h5,
 .heading-5 {
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h5,
 	.heading-5 {
-		font-size: 22px;
+		font-size: 18px;
 		line-height: 1.44444;
 	}
 }
 
 h6,
 .heading-6 {
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
 @media (min-width: 992px) {
 	h6,
 	.heading-6 {
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 1.5;
 	}
 }
