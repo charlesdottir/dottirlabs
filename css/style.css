@@ -2919,6 +2919,11 @@ html [class*='section-'].section-bottom-0 {
 .parallax-section-text {
 	position: absolute;
 	width: 100%;
+	align-text: center;
+}
+
+.parallax-section-text h1 {
+	top: 350px;
 }
 
 /*
@@ -4727,7 +4732,7 @@ html.rd-navbar-fixed-linked header {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main {
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: end;
 	padding: 35px 0;
 }
 
@@ -4751,7 +4756,7 @@ html.rd-navbar-fixed-linked header {
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main {
-	padding: 17px 0;
+	padding: 30px 0;
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-nav-item > .rd-navbar-submenu, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-nav-item > .rd-navbar-submenu {
