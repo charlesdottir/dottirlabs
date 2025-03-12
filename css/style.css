@@ -3928,10 +3928,14 @@ html.tablet .ui-to-top {
 	height: 2px;
 	width: 0;
 	opacity: 0;
-	background-color: #ffffff;
+	/*background-color: #ffffff; */ /*uncomment this to have a solid line */
 	transition: all 0.3s;
 	margin-left: auto;
 	margin-right: auto;
+	background-image: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+	background-position: bottom;
+	background-size: 5px 5px;
+	background-repeat: repeat-x;
 }
 
 .rd-navbar-static .rd-nav-link:hover::before {
