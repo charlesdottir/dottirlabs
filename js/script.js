@@ -531,11 +531,11 @@
 		});
 
 		/**
-  		 * Slide out scroll functionality old
+  		 * Slide left fade out functionality
      		 */
 
 		$(window).on("load",function() {
-		  function slideLeftFadeOutold(pageLoad) {
+		  function slideLeftFadeOutOld(pageLoad) {
 		    var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
 		    var min=0.3, max=0.7, threshold=0.01;
 		    
@@ -552,15 +552,15 @@
 		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).animate({left: '+=10'}, 0); $(this).fadeTo(0,min);}
 		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).animate({left: '+=10'}, 0); $(this).fadeTo(0,min);}
 		    });
-		  } slideLeftFadeOutold(true); //fade elements on page-load
-		  $(window).scroll(function(){slideLeftFadeOutold(false);}); //fade elements on scroll
+		  } slideLeftFadeOutOld(true); //fade elements on page-load
+		  $(window).scroll(function(){slideLeftFadeOutOld(false);}); //fade elements on scroll
 		});
 
 		/**
   		 * Slide out scroll functionality
      		 */
 
-		$window.scroll(function() {
+		$(window).scroll(function() {
 		    function slideLeftFadeOut(pageload) {
 			var scrollTop = $window.scrollTop();
 
@@ -574,7 +574,7 @@
 			}
 		     }
 		});
-
+		
 		/**
 		 * @desc Initialize owl carousel plugin
 		 * @param {object} carousel - carousel jQuery object
