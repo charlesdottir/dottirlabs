@@ -563,6 +563,7 @@
 		$(window).scroll(function() {
 			var scrollTop = $window.scrollTop();
 			var windowBottom = scrollTop+$(window).innerHeight();
+		        var min=0.3, max=0.7, threshold=0.01;
 
 			$(".slide-left-fade-out").each(function() {
 			    var objectHeight=$(this).outerHeight();
