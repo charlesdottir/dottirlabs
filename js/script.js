@@ -550,8 +550,8 @@
 		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;}
 		      } else if (objectBottom > windowBottom) {
 		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 10);}
-		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;}
-		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).style.left = 0;}
+		        /*else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;} */
+		      } /*else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).style.left = 0;} */
 		    });
 		  } slideOut(true); //fade elements on page-load
 		  $(window).scroll(function(){slideOut(false);}); //fade elements on scroll
