@@ -571,7 +571,7 @@
 			    } else if(scrollTop >= 400 && scrollTop < 600) {
 			      $(this).css({left: (50+(scrollTop-400)/2)+"%"})
 			    }
-			}
+			});
 		     }
 		});
 		
