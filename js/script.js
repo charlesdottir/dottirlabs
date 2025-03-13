@@ -561,7 +561,6 @@
      		 */
 
 		$(window).scroll(function() {
-		    function slideLeftFadeOut(pageload) {
 			var scrollTop = $window.scrollTop();
 
 			$(".slide-left-fade-out-old").each(function() {
@@ -572,7 +571,6 @@
 			      $(this).css({left: (50+(scrollTop-400)/2)+"%"})
 			    }
 			});
-		     }
 		});
 		
 		/**
