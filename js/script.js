@@ -583,6 +583,7 @@
 				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
 			      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
 		});
+		});
 		
 		/**
 		 * @desc Initialize owl carousel plugin
