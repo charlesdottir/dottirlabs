@@ -531,32 +531,49 @@
 		});
 
 		/**
-  		 * Slide out scroll functionality
+  		 * Slide out scroll functionality old
      		 */
 
-		
 		$(window).on("load",function() {
-		  function slideLeftFadeOut(pageLoad) {
+		  function slideLeftFadeOutold(pageLoad) {
 		    var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
 		    var min=0.3, max=0.7, threshold=0.01;
 		    
-		    $(".slide-left-fade-out").each(function() {
+		    $(".slide-left-fade-out-old").each(function() {
 		      /* Check the location of each desired element */
 		      var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
 		      
 		      /* Slide element in/out based on its visible percentage */
 		      if (objectTop < windowTop) {
-		        if (objectBottom > windowTop) {$(this).animate({left: '-=10'}, 10); $(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
+		        if (objectBottom > windowTop) {$(this).animate({left: '-=10'}, 0); $(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
 		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
 		      } else if (objectBottom > windowBottom) {
-		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
-		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min);}
-		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min);}
+		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 0); $(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
+		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).animate({left: '+=10'}, 0); $(this).fadeTo(0,min);}
+		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).animate({left: '+=10'}, 0); $(this).fadeTo(0,min);}
 		    });
-		  } slideLeftFadeOut(true); //fade elements on page-load
-		  $(window).scroll(function(){slideLeftFadeOut(false);}); //fade elements on scroll
+		  } slideLeftFadeOutold(true); //fade elements on page-load
+		  $(window).scroll(function(){slideLeftFadeOutold(false);}); //fade elements on scroll
 		});
+
+		/**
+  		 * Slide out scroll functionality
+     		 */
+
+		$window.scroll(function() {
+		    function slideLeftFadeOut(pageload) {
+			var scrollTop = $window.scrollTop();
+
+			$(".slide-left-fade-out-old").each(function() {
 		
+			    if (scrollTop >= 250 && scrollTop < 400) {
+			      $(this).css({top: -250 + scrollTop});      
+			    } else if(scrollTop >= 400 && scrollTop < 600) {
+			      $(this).css({left: (50+(scrollTop-400)/2)+"%"})
+			    }
+			}
+		     }
+		});
 
 		/**
 		 * @desc Initialize owl carousel plugin
