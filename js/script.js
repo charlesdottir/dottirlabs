@@ -536,25 +536,25 @@
 
 		
 		$(window).on("load",function() {
-		  function slideOut(pageLoad) {
+		  function slideLeftFadeOut(pageLoad) {
 		    var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
 		    var min=0.3, max=0.7, threshold=0.01;
 		    
-		    $(".slide-out").each(function() {
+		    $(".slide-left-fade-out").each(function() {
 		      /* Check the location of each desired element */
 		      var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
 		      
 		      /* Slide element in/out based on its visible percentage */
 		      if (objectTop < windowTop) {
-		        if (objectBottom > windowTop) {$(this).animate({left: '-=10'}, 10);}
-		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;}
+		        if (objectBottom > windowTop) {$(this).animate({left: '-=10'}, 10); $(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
+		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
 		      } else if (objectBottom > windowBottom) {
-		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 10);}
-		        /*else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;} */
-		      } /*else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).style.left = 0;} */
+		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
+		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min);}
+		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min);}
 		    });
-		  } slideOut(true); //fade elements on page-load
-		  $(window).scroll(function(){slideOut(false);}); //fade elements on scroll
+		  } slideLeftFadeOut(true); //fade elements on page-load
+		  $(window).scroll(function(){slideLefFadeOut(false);}); //fade elements on scroll
 		});
 		
 
