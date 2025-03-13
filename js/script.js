@@ -562,14 +562,25 @@
 
 		$(window).scroll(function() {
 			var scrollTop = $window.scrollTop();
+			var windowBottom = windowTop+$(window).innerHeight();
 
 			$(".slide-left-fade-out").each(function() {
 			    var objectHeight=$(this).outerHeight();
+			    var objectHeight=$(this).outerHeight();
+			    var objectTop=$(this).offset().top;
+			    var objectBottom=$(this).offset().top+objectHeight;
 		
-			    if (scrollTop >= 250 && scrollTop < 600) {
-			      $(this).css({left: (50+(scrollTop-400)/2)+"%"})
+			    if (objectTop < scrollTop) {
+			      $(this).css({right: (50+(scrollTop-400)/2)+"%"}; $(this).css({right: (50+(scrollTop-400)/2)+"%"};)
 			    }
-			});
+				
+			    if (objectTop < scrollTop) {
+				if (objectBottom > scrollTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-scrollTop)/objectHeight)));}
+				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
+			      } else if (objectBottom > windowBottom) {
+				if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
+				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
+			      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
 		});
 		
 		/**
