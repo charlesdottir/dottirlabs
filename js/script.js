@@ -564,10 +564,9 @@
 			var scrollTop = $window.scrollTop();
 
 			$(".slide-left-fade-out").each(function() {
+			    var objectHeight=$(this).outerHeight();
 		
-			    if (scrollTop >= 250 && scrollTop < 400) {
-			      $(this).css({top: -250 + scrollTop});      
-			    } else if(scrollTop >= 400 && scrollTop < 600) {
+			    if (scrollTop >= 250 && scrollTop < 600) {
 			      $(this).css({left: (50+(scrollTop-400)/2)+"%"})
 			    }
 			});
