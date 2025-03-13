@@ -5128,6 +5128,14 @@ html.rd-navbar-fixed-linked header {
 }
 
 /*
+ * Fade
+ */
+
+.fade {
+	opacity: 1;
+}
+
+/*
  * Owl Carousel
  */
 .owl-carousel {
