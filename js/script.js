@@ -554,7 +554,7 @@
 		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).animate({left: '+=10'}, 10); $(this).fadeTo(0,min);}
 		    });
 		  } slideLeftFadeOut(true); //fade elements on page-load
-		  $(window).scroll(function(){slideLefFadeOut(false);}); //fade elements on scroll
+		  $(window).scroll(function(){slideLeftFadeOut(false);}); //fade elements on scroll
 		});
 		
 
