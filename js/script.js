@@ -563,7 +563,7 @@
 		$(window).scroll(function() {
 			var scrollTop = $window.scrollTop();
 
-			$(".slide-left-fade-out-old").each(function() {
+			$(".slide-left-fade-out").each(function() {
 		
 			    if (scrollTop >= 250 && scrollTop < 400) {
 			      $(this).css({top: -250 + scrollTop});      
