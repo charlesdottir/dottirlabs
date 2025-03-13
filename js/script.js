@@ -509,7 +509,7 @@
 		}
 
 		/**
-  		 * fade functionality
+  		 * fade scroll functionality
      		 */
 
 		
@@ -518,16 +518,43 @@
 		    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
 		    $(".fade").each(function() {
 		      /* Check the location of each desired element */
-		      var objectBottom = $(this).offset().top + $(this).outerHeight();
+		      var objectMiddle = $(this).offset().top + ($(this).outerHeight()/2);
 		      
 		      /* If the element is completely within bounds of the window, fade it in */
-		      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+		      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
 		        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-		      } else { //object goes out of view (scrolling up)
+		      } /* else { //object goes out of view (scrolling up)
 		        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-		      }
+		      } */
 		    });
 		  }).scroll(); //invoke scroll-handler on page-load
+		});
+
+		/**
+  		 * Slide out scroll functionality
+     		 */
+
+		
+		$(window).on("load",function() {
+		  function slideOut(pageLoad) {
+		    var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
+		    var min=0.3, max=0.7, threshold=0.01;
+		    
+		    $(".slide-out").each(function() {
+		      /* Check the location of each desired element */
+		      var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
+		      
+		      /* Slide element in/out based on its visible percentage */
+		      if (objectTop < windowTop) {
+		        if (objectBottom > windowTop) {$(this).animate({left: '-=10'}, 10);}
+		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;}
+		      } else if (objectBottom > windowBottom) {
+		        if (objectTop < windowBottom) {$(this).animate({left: '+=10'}, 10);}
+		        else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).style.left = 0;}
+		      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).style.left = 0;}
+		    });
+		  } slideOut(true); //fade elements on page-load
+		  $(window).scroll(function(){slideOut(false);}); //fade elements on scroll
 		});
 		
 
