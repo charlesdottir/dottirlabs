@@ -571,7 +571,8 @@
 			    var objectBottom=$(this).offset().top+objectHeight;
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({right: (50+(scrollTop-400)/2)+"%"}; $(this).css({right: (50+(scrollTop-400)/2)+"%"};)
+			      $(this).css({right: (50+(scrollTop-400)/2)+"%"};) 
+			      $(this).css({right: (50+(scrollTop-400)/2)+"%"};)
 			    }
 				
 			    if (objectTop < scrollTop) {
