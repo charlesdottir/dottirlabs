@@ -573,16 +573,17 @@
 			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({right: (100*(objectBottom-scrollTop)/objectHeight)+"%"}); 
+			      $(this).css({left: (100*(objectBottom-scrollTop)/objectHeight)+"%"}); 
 			    }
-				
+
+			/*
 			    if (objectTop < scrollTop) {
 				if (objectBottom > scrollTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-scrollTop)/objectHeight)));}
 				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
 			      } else if (objectBottom > windowBottom) {
 				if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
 				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-			      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
+			      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);} */
 		});
 		});
 		
