@@ -574,6 +574,7 @@
 		
 			    if (objectTop < scrollTop) {
 			      $(this).css({left: (100*(objectBottom-scrollTop)/objectHeight)+"%"}); 
+			      $(this).css({opacity: (100*(objectBottom-scrollTop)/objectHeight)+"%"}); 
 			    }
 
 			/*
