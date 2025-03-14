@@ -573,7 +573,7 @@
 			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({right: ((objectBottom-scrollTop)/objectHeight)+"%"}); 
+			      $(this).css({right: (100*(objectBottom-scrollTop)/objectHeight)+"%"}); 
 			    }
 				
 			    if (objectTop < scrollTop) {
