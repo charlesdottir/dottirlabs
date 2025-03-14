@@ -573,19 +573,25 @@
 			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({right: (100-(100*(Math.floor((objectBottom-scrollTop)/objectHeight))))+"%"}); 
+			      $(this).css({right: (100-(100*(objectBottom-scrollTop)/objectHeight))+"%"}); 
 			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
 			    }
 
-			/*
+			});
+
+			$(".slide-right-fade-out").each(function() {
+			    var objectHeight=$(this).outerHeight();
+			    var objectHeight=$(this).outerHeight();
+			    var objectTop=$(this).offset().top;
+			    var objectBottom=$(this).offset().top+objectHeight;
+			    var objectWidth=$(this).outerWidth();
+		
 			    if (objectTop < scrollTop) {
-				if (objectBottom > scrollTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-scrollTop)/objectHeight)));}
-				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-			      } else if (objectBottom > windowBottom) {
-				if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
-				else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-			      } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);} */
-		});
+			      $(this).css({left: (100-(100*(objectBottom-scrollTop)/objectHeight))+"%"}); 
+			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
+			    }
+
+			});
 		});
 		
 		/**
