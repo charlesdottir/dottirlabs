@@ -573,7 +573,7 @@
 			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < (scrollTop)) {
-			      $(this).css({right: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1)+"%"}); 
+			      $(this).css({right: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1))+"%"}); 
 			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
 			    }
 
@@ -587,7 +587,7 @@
 			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({left: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1)+"%"}); 
+			      $(this).css({left: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1))+"%"}); 
 			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
 			    }
 
