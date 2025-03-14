@@ -570,10 +570,10 @@
 			    var objectHeight=$(this).outerHeight();
 			    var objectTop=$(this).offset().top;
 			    var objectBottom=$(this).offset().top+objectHeight;
+			    var objectWidth=$(this).outerWidth();
 		
 			    if (objectTop < scrollTop) {
-			      $(this).css({right: (50+(scrollTop-400)/2)+"%"}); 
-			      $(this).css({right: (50+(scrollTop-400)/2)+"%"});
+			      $(this).css({right: ((objectBottom-scrollTop)/objectHeight)+"%"}); 
 			    }
 				
 			    if (objectTop < scrollTop) {
