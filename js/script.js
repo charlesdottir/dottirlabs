@@ -574,10 +574,12 @@
 
 
 			/* this is for sliding out on page load */
-			    for (let i = 0; i < 100; i++) {
-				    $(this).css({right: (i)+"%"}); 
-				    $(this).css({opacity: (i)+"%"});
-			    }
+			    setTimeout(function() {
+				    for (let i = 0; i < 100; i++) {
+					    $(this).css({right: (i)+"%"}); 
+					    $(this).css({opacity: (i)+"%"});
+				    }
+			    }, 5000);
 
 			/* /* this is for updating on scroll eventually 
 			    if (objectTop < (scrollTop+50)) {
