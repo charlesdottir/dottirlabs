@@ -5149,6 +5149,16 @@ html.rd-navbar-fixed-linked header {
   animation: slideLeftFadeOut 10s ease-in-out;
 }
 
+@keyframes slideRightFadeOut {
+  0% { opacity: 1; left: 0%; }
+  60% { opacity: 1; left: 0%; }
+  100% { opacity: 0; right: 100%; }
+}
+
+.slide-right-fade-out {
+  animation: slideRightFadeOut 10s ease-in-out;
+}
+
 
 /*
  * Owl Carousel
