@@ -531,7 +531,7 @@
 		});
 
 		/**
-  		 * Slide left fade out functionality
+  		 * Old slide left fade out functionality not working
      		 */
 
 		$(window).on("load",function() {
@@ -571,11 +571,20 @@
 			    var objectTop=$(this).offset().top;
 			    var objectBottom=$(this).offset().top+objectHeight;
 			    var objectWidth=$(this).outerWidth();
-		
+
+
+			/* this is for sliding out on page load */
+			    for (let i = 0; i < 100; i++) {
+				    $(this).css({right: (i)+"%"}); 
+				    $(this).css({opacity: (i)+"%"});
+			    }
+
+			/* /* this is for updating on scroll eventually 
 			    if (objectTop < (scrollTop+50)) {
 			      $(this).css({right: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1))+"%"}); 
 			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
 			    }
+       			*/
 
 			});
 
@@ -585,11 +594,13 @@
 			    var objectTop=$(this).offset().top;
 			    var objectBottom=$(this).offset().top+objectHeight;
 			    var objectWidth=$(this).outerWidth();
-		
+
+			/* /* this is for updating on scroll eventually 
 			    if (objectTop < (scrollTop+50)) {
 			      $(this).css({left: (Math.abs((100-(100*(objectBottom-scrollTop)/objectHeight))-1))+"%"}); 
 			      $(this).css({opacity: (100*((objectBottom-scrollTop)/objectHeight) ** 2)+"%"}); 
 			    }
+       			*/
 
 			});
 		});
