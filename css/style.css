@@ -5148,7 +5148,7 @@ html.rd-navbar-fixed-linked header {
 .slide-left-fade-out {
   animation: slideLeftFadeOut 6s ease-in-out;
   animation-fill-mode: both;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 @keyframes slideRightFadeOut {
@@ -5160,7 +5160,7 @@ html.rd-navbar-fixed-linked header {
 .slide-right-fade-out {
   animation: slideRightFadeOut 6s ease-in-out;
   animation-fill-mode: both;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 
