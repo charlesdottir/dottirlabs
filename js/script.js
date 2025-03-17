@@ -565,22 +565,23 @@
 			var windowBottom = scrollTop+$(window).innerHeight();
 		        var min=0.3, max=0.7, threshold=0.01;
 
-			$(".slide-left-fade-out").each(function() {
-			    var objectHeight=$(this).outerHeight();
-			    var objectHeight=$(this).outerHeight();
-			    var objectTop=$(this).offset().top;
-			    var objectBottom=$(this).offset().top+objectHeight;
-			    var objectWidth=$(this).outerWidth();
+			setTimeout(function() {
+				$(".slide-left-fade-out").each(function() {
+				    var objectHeight=$(this).outerHeight();
+				    var objectHeight=$(this).outerHeight();
+				    var objectTop=$(this).offset().top;
+				    var objectBottom=$(this).offset().top+objectHeight;
+				    var objectWidth=$(this).outerWidth();
 
 
 			/* this is for sliding out on page load */
-			    setTimeout(function() {
+			    
 				    for (let i = 0; i < 100; i++) {
 					    $(this).css({right: (i)+"%"}); 
 					    $(this).css({opacity: (i)+"%"});
 					    console.log(i);
 				    }
-			    }, 5000);
+			    
 
 			/* /* this is for updating on scroll eventually 
 			    if (objectTop < (scrollTop+50)) {
@@ -589,14 +590,14 @@
 			    }
        			*/
 
-			});
+				});
 
-			$(".slide-right-fade-out").each(function() {
-			    var objectHeight=$(this).outerHeight();
-			    var objectHeight=$(this).outerHeight();
-			    var objectTop=$(this).offset().top;
-			    var objectBottom=$(this).offset().top+objectHeight;
-			    var objectWidth=$(this).outerWidth();
+				$(".slide-right-fade-out").each(function() {
+				    var objectHeight=$(this).outerHeight();
+				    var objectHeight=$(this).outerHeight();
+				    var objectTop=$(this).offset().top;
+				    var objectBottom=$(this).offset().top+objectHeight;
+				    var objectWidth=$(this).outerWidth();
 
 			/* /* this is for updating on scroll eventually 
 			    if (objectTop < (scrollTop+50)) {
@@ -605,7 +606,8 @@
 			    }
        			*/
 
-			});
+				});
+			}, 5000);
 		});
 		
 		/**
