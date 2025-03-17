@@ -578,6 +578,7 @@
 				    for (let i = 0; i < 100; i++) {
 					    $(this).css({right: (i)+"%"}); 
 					    $(this).css({opacity: (i)+"%"});
+					    console.log(i);
 				    }
 			    }, 5000);
 
