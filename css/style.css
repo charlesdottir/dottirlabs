@@ -5140,12 +5140,13 @@ html.rd-navbar-fixed-linked header {
  */
 
 @keyframes slide-left-fade-out {
-  from { opacity: 0; right: 0%; }
-  to { opacity: 1; right: 100%; }
+  0% { opacity: 1; right: 0%; }
+  60% { opacity: 1; right: 0%; }
+  100% { opacity: 0; right: 100%; }
 }
 
 .slide-left-fade-out {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
 }
 
 
