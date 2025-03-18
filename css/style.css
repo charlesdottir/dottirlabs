@@ -5625,7 +5625,14 @@ html.rd-navbar-fixed-linked header {
 
 .team4 .rounded-circle {
 	padding: 10px;
-	border: 4px solid #A3D692;
+    	border: 4px solid #A3D692;
+    	height: 250px;
+    	width: 250px;
+    	object-fit: cover;
+    	object-position: 0 0%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
 }
 
 .team4 ul li a {
