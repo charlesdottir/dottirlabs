@@ -5623,6 +5623,11 @@ html.rd-navbar-fixed-linked header {
 	font-size: 13px;
 }
 
+.team4 .rounded-circle {
+	padding: 10px;
+	border: 4px solid #A3D692;
+}
+
 .team4 ul li a {
 	color: #8d97ad;
 	padding-right: 15px;
