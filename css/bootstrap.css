@@ -3708,10 +3708,16 @@ input[type="button"].btn-block {
 .card-body {
 	flex: 1 1 auto;
 	padding: 1.25rem;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.card-body li {
+	color: #6EB8BC;
 }
 
 .card-title {
 	margin-bottom: 0.75rem;
+	color: black;
 }
 
 .card-subtitle {
