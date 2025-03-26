@@ -5612,16 +5612,32 @@ html.rd-navbar-fixed-linked header {
  * Bubbles
  */
 
-.bubble-1 {
-	top: 13%;
-	left: 39%;
+.bubbles {	
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+}
+
+.bubbles li {
+	position: absolute;
+	display: block;
+	list-style: none;
 	width: 48px;
 	height: 48px;
+	background: #6FBEB8;
+	animation: animate-bubble-1 25s infinite;
+}
+
+.bubbles li:nth-child(1) {
+	left: 5%;
+	top: 5%;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	background-color: #6FBEB8;
-	position: absolute;
-	z-index: 0;
-	animation: animate-bubble-1 15s infinite;
 }
 
 @keyframes animate-bubble-1 {
