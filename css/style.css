@@ -5621,7 +5621,7 @@ html.rd-navbar-fixed-linked header {
 	background-color: #6FBEB8;
 	position: absolute;
 	z-index: 0;
-	animation-name: animate-bubble-1 15s infinite;
+	animation: animate-bubble-1 15s infinite;
 }
 
 @keyframes animate-bubble-1 {
