@@ -3688,6 +3688,7 @@ input[type="button"].btn-block {
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 0.25rem;
+	box-shadow: 5px 5px 15px 2px #5354565e;
 }
 
 .card > hr {
@@ -3722,6 +3723,10 @@ input[type="button"].btn-block {
 
 .card-img-top svg {
 	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.card-img-top {
+	border-radius: 10px 10px 0 0;
 }
 
 .card-img-top h4 {
@@ -3764,6 +3769,7 @@ input[type="button"].btn-block {
 	padding: 0.75rem 1.25rem;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0 0 10px 10px !important;
 }
 
 .card-footer:last-child {
