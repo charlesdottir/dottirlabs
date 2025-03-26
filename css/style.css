@@ -5627,6 +5627,7 @@ html.rd-navbar-fixed-linked header {
 	list-style: none;
 	width: 48px;
 	height: 48px;
+	border-radius: 50%;
 	background: #6FBEB8;
 	animation: animate-bubble-1 25s infinite;
 }
