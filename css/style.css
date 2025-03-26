@@ -5617,6 +5617,7 @@ html.rd-navbar-fixed-linked header {
 	left: 39%;
 	width: 24px;
 	height: 24px;
+	background-color: #6FBEB8;
 	animation-name: animate-bubble-1;
 	animation-duration: 15s;
 }
