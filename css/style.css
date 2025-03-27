@@ -5629,16 +5629,38 @@ html.rd-navbar-fixed-linked header {
 	height: 48px;
 	border-radius: 50%;
 	background: #6FBEB8;
-	animation: animate-bubble-1 25s infinite;
 }
 
 .bubbles li:nth-child(1) {
-	left: 5%;
-	top: 5%;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	background-color: #6FBEB8;
+	animation: animate-bubble-1 25s infinite;
+}
+
+.bubbles li:nth-child(2) {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #6FBEB8;
+	animation: animate-bubble-2 25s infinite;
+}
+
+.bubbles li:nth-child(3) {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #6FBEB8;
+	animation: animate-bubble-1 25s infinite;
+}
+
+.bubbles li:nth-child(4) {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #6FBEB8;
+	animation: animate-bubble-2 25s infinite;
 }
 
 @keyframes animate-bubble-1 {
@@ -5656,6 +5678,27 @@ html.rd-navbar-fixed-linked header {
 	}
 	80% {
 		transform: scale(0.5) translate(10px, -10px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes animate-bubble-2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	20% {
+		transform: scale(0.5) translate(10px, 10px);
+	}
+	40% {
+		transform: scale(1.5) translate(10px, 10px);
+	}
+	60% {
+		transform: scale(0.5) translate(10px, -10px);
+	}
+	80% {
+		transform: scale(1.5) translate(-10px, 10px);
 	}
 	100% {
 		transform: translate(0, 0);
