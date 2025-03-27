@@ -5644,7 +5644,7 @@ html.rd-navbar-fixed-linked header {
 	height: 20px;
 	border-radius: 50%;
 	background-color: #6FBEB8;
-	animation: animate-bubble-2 25s infinite;
+	animation: animate-bubble-2 35s infinite;
 }
 
 .bubbles li:nth-child(3) {
@@ -5652,7 +5652,7 @@ html.rd-navbar-fixed-linked header {
 	height: 80px;
 	border-radius: 50%;
 	background-color: #6FBEB8;
-	animation: animate-bubble-1 25s infinite;
+	animation: animate-bubble-1 40s infinite;
 }
 
 .bubbles li:nth-child(4) {
@@ -5660,7 +5660,7 @@ html.rd-navbar-fixed-linked header {
 	height: 45px;
 	border-radius: 50%;
 	background-color: #6FBEB8;
-	animation: animate-bubble-2 25s infinite;
+	animation: animate-bubble-2 45s infinite;
 }
 
 @keyframes animate-bubble-1 {
