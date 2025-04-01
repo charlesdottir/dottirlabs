@@ -3688,8 +3688,12 @@ input[type="button"].btn-block {
 	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 10px;
+	border-radius: 200px;
 	box-shadow: 5px 5px 15px 2px #5354565e;
+}
+
+.card .border {
+	border-radius: 0 0 200px 200px;
 }
 
 .card > hr {
@@ -3805,7 +3809,7 @@ input[type="button"].btn-block {
 
 .card-img-top {
 	width: 100%;
-	border-radius: 10px 10px 0 0;
+	border-radius: 200px 200px 0 0;
 	overflow: hidden;
 }
 
