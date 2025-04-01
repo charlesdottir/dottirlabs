@@ -3695,7 +3695,7 @@ input[type="button"].btn-block {
 .card .border {
 	border-radius: 0 0 200px 200px;
 	padding: 10px 20px 40px 20px !important;
-	min-height: 175px;
+	min-height: 180px;
 }
 
 .card > hr {
