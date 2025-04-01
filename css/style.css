@@ -5138,6 +5138,10 @@ html.rd-navbar-fixed-linked header {
 .swiper-slide-caption img {
 	height: 700px !important; /* fake value to override */
 	max-width: none;
+	border: 10px;
+	border-style: dotted;
+	padding: 30px;
+	border-color: #4C98BE;
 }
 
 /*
