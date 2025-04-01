@@ -451,13 +451,13 @@
 			swiper.decor.el = document.createElement( 'div' );
 			swiper.decor.el.classList.add( 'swiper-decorative' );
 			swiper.decor.circle = calcCircle( swiper );
-			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2-300)+'px;height:'+(swiper.decor.circle.radius*2-300)+'px"></div>';
+			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2)+'px;height:'+(swiper.decor.circle.radius*2)+'px"></div>';
 			swiper.$el[0].insertBefore( swiper.decor.el, swiper.$wrapperEl[0] );
 			swiper.decor.circleEl = swiper.decor.el.querySelector('.swiper-decorative-circle');
 
 			swiper.on( 'resize', function () {
 				swiper.decor.circle = calcCircle( swiper );
-				swiper.decor.circleEl.setAttribute( 'style', 'left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2-300)+'px;height:'+(swiper.decor.circle.radius*2-300)+'px' );
+				swiper.decor.circleEl.setAttribute( 'style', 'left:'+swiper.decor.circle.centerX+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2)+'px;height:'+(swiper.decor.circle.radius*2)+'px' );
 			});
 
 			swiper.on( 'slideChangeTransitionStart', function () {
@@ -486,10 +486,10 @@
 							duration: swiper.params.speed/4,
 							delay: swiper.params.speed/2,
 							easing: swiper.params.decor.easingOut,
-							left: swiper.decor.circle.centerX + 100,
+							left: swiper.decor.circle.centerX,
 							top: swiper.decor.circle.centerY,
-							width: swiper.decor.circle.radius * 2 - 300,
-							height: swiper.decor.circle.radius * 2 - 300,
+							width: swiper.decor.circle.radius * 2,
+							height: swiper.decor.circle.radius * 2,
 							complete: resolve
 						});
 					});
