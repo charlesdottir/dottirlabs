@@ -457,7 +457,7 @@
 
 			swiper.on( 'resize', function () {
 				swiper.decor.circle = calcCircle( swiper );
-				swiper.decor.circleEl.setAttribute( 'style', 'left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2-300)+'px;height:'+(swiper.decor.circle.radius*2-300)+'px' );
+				swiper.decor.circleEl.setAttribute( 'style', 'left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*2)+'px;height:'+(swiper.decor.circle.radius*2)+'px' );
 			});
 
 			swiper.on( 'slideChangeTransitionStart', function () {
