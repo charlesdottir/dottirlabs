@@ -472,8 +472,8 @@
 							easing: swiper.params.decor.easingIn,
 							left: swiper.width/2,
 							top: swiper.height/2,
-							width: swiper.width * 2 - 300,
-							height: swiper.width * 2 - 300,
+							width: swiper.width * 2,
+							height: swiper.width * 2,
 							complete: resolve
 						})
 					});
@@ -488,8 +488,8 @@
 							easing: swiper.params.decor.easingOut,
 							left: swiper.decor.circle.centerX,
 							top: swiper.decor.circle.centerY,
-							width: swiper.decor.circle.radius * 2 - 300,
-							height: swiper.decor.circle.radius * 2 - 300,
+							width: swiper.decor.circle.radius * 2,
+							height: swiper.decor.circle.radius * 2,
 							complete: resolve
 						});
 					});
