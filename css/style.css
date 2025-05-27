@@ -288,7 +288,7 @@ mark,
 }
 
 .big {
-	font-size: 22px;
+	font-size: 28px;
 	line-height: 1.72222;
 	font-weight: 500;
 }
@@ -318,6 +318,7 @@ p [style*='max-width'] {
 }
 
 .postitle {
+	font-size: 24px;
 	font-weight: 625;
 	line-height: 21px;
 	color: rgba(0, 0, 0, 0.7);
