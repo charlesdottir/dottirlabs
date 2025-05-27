@@ -5667,6 +5667,14 @@ html.rd-navbar-fixed-linked header {
 	animation: animate-bubble-2 45s infinite;
 }
 
+.bubbles li:nth-child(5) {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #4C98BE;
+	animation: animate-bubble-1 40s infinite;
+}
+
 @keyframes animate-bubble-1 {
 	0% {
 		transform: translate(0, 0);
