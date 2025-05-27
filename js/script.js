@@ -451,7 +451,7 @@
 			swiper.decor.el = document.createElement( 'div' );
 			swiper.decor.el.classList.add( 'swiper-decorative' );
 			swiper.decor.circle = calcCircle( swiper );
-			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*1.75)+'px;height:'+(swiper.decor.circle.radius*1.75)+'px"></div>';
+			swiper.decor.el.innerHTML = '<div class="swiper-decorative-circle" style="left:'+swiper.decor.circle.centerX+100+'px;top:'+swiper.decor.circle.centerY+'px;width:'+(swiper.decor.circle.radius*1.5)+'px;height:'+(swiper.decor.circle.radius*1.5)+'px"></div>';
 			swiper.$el[0].insertBefore( swiper.decor.el, swiper.$wrapperEl[0] );
 			swiper.decor.circleEl = swiper.decor.el.querySelector('.swiper-decorative-circle');
 
@@ -472,8 +472,8 @@
 							easing: swiper.params.decor.easingIn,
 							left: swiper.width/2,
 							top: swiper.height/2,
-							width: swiper.width * 1.25,
-							height: swiper.width * 1.25,
+							width: swiper.width * 1.5,
+							height: swiper.width * 1.5,
 							complete: resolve
 						})
 					});
@@ -488,8 +488,8 @@
 							easing: swiper.params.decor.easingOut,
 							left: swiper.decor.circle.centerX,
 							top: swiper.decor.circle.centerY,
-							width: swiper.decor.circle.radius * 1.25,
-							height: swiper.decor.circle.radius * 1.25,
+							width: swiper.decor.circle.radius * 1.5,
+							height: swiper.decor.circle.radius * 1.5,
 							complete: resolve
 						});
 					});
