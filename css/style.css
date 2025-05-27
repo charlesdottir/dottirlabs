@@ -5484,7 +5484,7 @@ html.rd-navbar-fixed-linked header {
 }
 
 .owl-pagination-custom::after {
-	top: 47%;
+	top: 33%;
 	left: 68%;
 	width: 61px;
 	height: 61px;
