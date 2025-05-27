@@ -2353,7 +2353,7 @@ textarea.form-input {
 	margin-right: auto;
 	background-color: #ffffff;
 	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
-	border-radius: 100px; /* for rectangular cards: 10px 100px 70px 70px; */
+	border-radius: 200px; /* for rectangular cards: 10px 100px 70px 70px; */
 	padding: 30px 10px 40px 20px;
 }
 
