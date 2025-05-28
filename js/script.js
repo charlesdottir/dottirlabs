@@ -59,6 +59,14 @@
 		}
 	});
 
+	// Fix page transition not disappearing on back button
+
+	$(window).bind("pageshow", function(event) {
+	    if (event.pageTransition.persisted) {
+	        window.location.reload() 
+	    }
+	});
+
 	// Initialize scripts that require a finished document
 	$(function () {
 		isNoviBuilder = window.xMode;
