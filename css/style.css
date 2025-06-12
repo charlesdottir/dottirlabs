@@ -5485,7 +5485,7 @@ html.rd-navbar-fixed-linked header {
 
 .owl-pagination-custom::after {
 	top: 33%;
-	left: 68%;
+	left: 48%;
 	width: 61px;
 	height: 61px;
 	animation-name: animate-dot-2;
