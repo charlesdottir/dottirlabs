@@ -6140,3 +6140,113 @@ html.rd-navbar-fixed-linked header {
 	display: block;
 	padding: 6px;
 }
+
+/* Added styles for partner logo gallery */
+.partners-gallery {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.partner-logo-item {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo-item:hover {
+  transform: scale(1.1);
+}
+
+.partner-logo-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #f8f9fa;
+}
+
+.partner-dot {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #4c98be;
+  opacity: 0.7;
+  animation: float-dot 4s ease-in-out infinite;
+}
+
+.partner-dot:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.partner-dot:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.partner-dot:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.partner-dot:nth-child(8) {
+  animation-delay: 2s;
+}
+
+.partner-dot:nth-child(10) {
+  animation-delay: 2.5s;
+}
+
+@keyframes float-dot {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
+/* Responsive adjustments for partner gallery */
+@media (max-width: 991.98px) {
+  .partners-gallery {
+    height: 600px;
+  }
+
+  .partner-logo-item {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .partners-gallery {
+    height: 700px;
+  }
+
+  .partner-logo-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .partner-dot {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .partners-gallery {
+    height: 500px;
+  }
+
+  .partner-logo-item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .partner-logo-item:nth-child(n + 8) {
+    display: none;
+  }
+}
