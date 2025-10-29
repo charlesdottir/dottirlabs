@@ -6171,12 +6171,13 @@ html.rd-navbar-fixed-linked header {
   border: 3px solid #f8f9fa;
 }
 
+/* Reducing animation range and adjusting dot positioning to prevent overlap */
 .partner-dot {
   position: absolute;
   border-radius: 50%;
   background-color: #4c98be;
   opacity: 0.7;
-  animation: float-dot 4s ease-in-out infinite;
+  animation: float-dot 5s ease-in-out infinite;
   z-index: 1;
 }
 
@@ -6218,7 +6219,7 @@ html.rd-navbar-fixed-linked header {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(-5px) scale(1.05);
   }
 }
 
