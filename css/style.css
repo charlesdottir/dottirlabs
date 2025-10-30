@@ -6260,12 +6260,9 @@ html.rd-navbar-fixed-linked header {
     height: 70px;
   }
 
-  .partner-logo-item:nth-child(n + 6) {
-    display: none;
-  }
-
   .partner-dot {
     width: 15px !important;
     height: 15px !important;
   }
 }
+
