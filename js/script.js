@@ -1265,3 +1265,37 @@
 
 	});
 }());
+
+
+// Declare the $ variable before using it
+var $ = require("jquery")
+
+$(window).on("load", () => {
+  function animateNewsCards() {
+    var windowBottom = $(window).scrollTop() + $(window).innerHeight()
+
+    $(".news-card-animate").each(function (index) {
+      var cardTop = $(this).offset().top
+      var cardMiddle = cardTop + $(this).outerHeight() / 2
+
+      // Trigger animation when card is in view
+      if (cardMiddle < windowBottom - 100) {
+        // Add staggered delay based on index
+        var delay = index * 100
+        var $card = $(this)
+
+        setTimeout(() => {
+          $card.addClass("animate-in")
+        }, delay)
+      }
+    })
+  }
+
+  // Run on page load
+  animateNewsCards()
+
+  // Run on scroll
+  $(window).scroll(() => {
+    animateNewsCards()
+  })
+})
