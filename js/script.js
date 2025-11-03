@@ -1269,31 +1269,45 @@
 
 // Wait until the window has fully loaded
 $(window).on("load", () => {
-  function animateNewsCards() {
+  function animateNewsItems() {
     var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    var windowTop = $(window).scrollTop();
 
-    $(".news-card-animate").each(function (index) {
-      var cardTop = $(this).offset().top;
-      var cardMiddle = cardTop + $(this).outerHeight() / 2;
+    $(".news-animate").each(function () {
+      var itemTop = $(this).offset().top;
+      var itemBottom = itemTop + $(this).outerHeight();
+      var itemMiddle = itemTop + $(this).outerHeight() / 2;
 
-      // Trigger animation when card is in view
-      if (cardMiddle < windowBottom - 100) {
-        // Add staggered delay based on index
-        var delay = index * 100;
-        var $card = $(this);
+      // Trigger animation when item enters viewport
+      if (itemMiddle < windowBottom - 100 && itemBottom > windowTop) {
+        var delay = Number.parseInt($(this).attr("data-delay")) || 0;
+        var $item = $(this);
 
         setTimeout(() => {
-          $card.addClass("animate-in");
+          $item.addClass("animate-in");
         }, delay);
       }
     });
   }
 
   // Run on page load
-  animateNewsCards();
+  setTimeout(animateNewsItems, 100);
 
-  // Run on scroll
+  // Run on scroll with throttling for performance
+  var scrollTimeout;
   $(window).scroll(() => {
-    animateNewsCards();
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(animateNewsItems, 50);
+  });
+
+  // Parallax effect for hero background
+  $(window).scroll(() => {
+    var scrolled = $(window).scrollTop();
+    $(".news-hero-background").css(
+      "transform",
+      "translateY(" + scrolled * 0.5 + "px)"
+    );
   });
 });
