@@ -1302,6 +1302,34 @@ $(window).on("load", () => {
     scrollTimeout = setTimeout(animateNewsItems, 50);
   });
 
+  function animateNewsArticles() {
+    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    var windowTop = $(window).scrollTop();
+
+    $(".news-article-animate").each(function () {
+      var itemTop = $(this).offset().top;
+      var itemBottom = itemTop + $(this).outerHeight();
+      var itemMiddle = itemTop + $(this).outerHeight() / 3;
+
+      // Trigger animation when article enters viewport
+      if (itemMiddle < windowBottom - 100 && itemBottom > windowTop) {
+        $(this).addClass("animate-in");
+      }
+    });
+  }
+
+  // Run on page load
+  setTimeout(animateNewsArticles, 100);
+
+  // Run on scroll with throttling for performance
+  var scrollTimeoutArticles;
+  $(window).scroll(() => {
+    if (scrollTimeoutArticles) {
+      clearTimeout(scrollTimeoutArticles);
+    }
+    scrollTimeoutArticles = setTimeout(animateNewsArticles, 50);
+  });
+
   // Parallax effect for hero background
   $(window).scroll(() => {
     var scrolled = $(window).scrollTop();
