@@ -6954,7 +6954,7 @@ html.rd-navbar-fixed-linked header {
 
   .news-article-card {
     justify-self: center !important;
-    margin: -60px 20px 0 20px !important;
+    margin: -60px 40px 0 0px !important;
     max-width: 100%;
   }
 
@@ -6962,6 +6962,7 @@ html.rd-navbar-fixed-linked header {
     font-size: 26px;
   }
 }
+
 
 
 
