@@ -6624,7 +6624,7 @@ html.rd-navbar-fixed-linked header {
   padding: 50px;
   border-radius: 16px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
-  max-width: 550px;
+  max-width: 700px;
   z-index: 2;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -6960,5 +6960,6 @@ html.rd-navbar-fixed-linked header {
     font-size: 26px;
   }
 }
+
 
 
