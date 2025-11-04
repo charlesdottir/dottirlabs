@@ -6340,7 +6340,7 @@ html.rd-navbar-fixed-linked header {
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   font-family: "Montserrat", sans-serif;
   position: relative;
-  padding: 20%;
+  padding-top: 20%;
 }
 
 .news-hero-title::after {
@@ -6962,6 +6962,7 @@ html.rd-navbar-fixed-linked header {
     font-size: 26px;
   }
 }
+
 
 
 
