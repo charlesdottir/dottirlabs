@@ -35,6 +35,10 @@ button::-moz-focus-inner {
 	outline: none;
 }
 
+div.email > span:nth-child(2) {
+	display: none;
+}
+
 blockquote {
 	padding: 0;
 	margin: 0;
